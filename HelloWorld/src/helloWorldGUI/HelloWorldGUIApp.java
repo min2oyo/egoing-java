@@ -1,4 +1,4 @@
-package HelloWorldGUI;
+package helloWorldGUI;
 
 import javax.swing.*;
 import java.awt.Dimension;

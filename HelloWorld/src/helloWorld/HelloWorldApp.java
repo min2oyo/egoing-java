@@ -1,4 +1,4 @@
-package go;
+package helloWorld;
 
 public class HelloWorldApp {
 
