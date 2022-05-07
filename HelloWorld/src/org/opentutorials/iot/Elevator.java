@@ -1,6 +1,7 @@
 package org.opentutorials.iot;
 
 public class Elevator {
+
 	String _id;
 
 	public Elevator(String id) {
@@ -16,4 +17,5 @@ public class Elevator {
 		System.out.println(this._id + " → Elevator callForDown : " + stopFloor);
 		return true;
 	}
+
 }

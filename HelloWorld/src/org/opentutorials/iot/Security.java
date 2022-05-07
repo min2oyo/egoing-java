@@ -3,6 +3,7 @@ package org.opentutorials.iot;
 import java.util.Random;
 
 public class Security implements OnOff {
+
 	String _id;
 
 	public Security(String id) {
@@ -24,4 +25,5 @@ public class Security implements OnOff {
 		System.out.println(this._id + "\tSecurity exist people number : " + rand);
 		return rand.nextInt(4);
 	}
+
 }

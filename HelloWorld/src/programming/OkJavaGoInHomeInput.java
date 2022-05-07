@@ -1,13 +1,17 @@
 package programming;
 
+import javax.swing.JOptionPane;
+
+import org.opentutorials.iot.DimmingLights;
 import org.opentutorials.iot.Elevator;
 import org.opentutorials.iot.Lighting;
 import org.opentutorials.iot.Security;
 
-public class OkJavaGoInHome {
+public class OkJavaGoInHomeInput {
 
 	public static void main(String[] args) {
-		String id = "JAVA APT 507";
+		String id = JOptionPane.showInputDialog("Enter a ID");
+		String bright = JOptionPane.showInputDialog("Enter a ID");
 
 		// Elevator call
 		Elevator myElevator = new Elevator(id);
@@ -23,6 +27,10 @@ public class OkJavaGoInHome {
 
 		Lighting floorLamp = new Lighting(id + " / floor Lamp");
 		floorLamp.on();
+
+		DimmingLights moodLamp = new DimmingLights(id + " moodLamp");
+		moodLamp.setBright(Double.parseDouble(bright));
+		moodLamp.on();
 	}
 
 }
