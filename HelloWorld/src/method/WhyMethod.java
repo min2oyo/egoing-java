@@ -5,22 +5,23 @@ public class WhyMethod {
 	public static void main(String[] args) {
 
 		// 100,000,000줄
-		printTwoTimesA();
+		printTwoTimes("a", "-"); // 인자, argument
 		// 100,000,000줄
-		printTwoTimesA();
+		printTwoTimes("a", "*");
 		// 100,000,000줄
-		printTwoTimesA();
+		printTwoTimes("a", "&");
+		printTwoTimes("b", "!");
 
 	}
 
-	public static void printTwoTimesA() {
-		System.out.println("-");
-		printA();
-		printA();
+	public static void printTwoTimes(String text, String delimiter) { // 매개변수, parameter
+		System.out.println(delimiter);
+		printText(text);
+		printText(text);
 	}
 
-	public static void printA() {
-		System.out.println("a");
+	public static void printText(String text) {
+		System.out.println(text);
 	}
 
 }
