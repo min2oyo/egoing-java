@@ -4,12 +4,12 @@ public class AuthApp {
 
 	public static void main(String[] args) {
 
-		String id = "ria";
 		String[] user = { "ria" };
+		String id = "ria";
 
 		System.out.println("Hi. ");
-		if (id.equals(inputId(user))) { // 문자열은 이거로 한다던데..?
-//		if (id == inputId(user)) {	// 이것도 실행된다(?)
+		if (inputId(user).equals(id)) { // 문자열은 이거로 한다던데..?
+//		if (inputId(user) == id) {	// 이것도 true로 뜬다(?)
 			System.out.println("Master!");
 		} else {
 			System.out.println("Who are you?");
