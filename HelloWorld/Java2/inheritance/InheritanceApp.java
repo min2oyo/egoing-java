@@ -24,7 +24,7 @@ class Cal1 {
 
 	// Overloading
 	public int sum(int v1, int v2, int v3) {
-		return v1 + v2 + v3;
+		return this.sum(v1, v2) + v3;
 	}
 
 }
@@ -34,7 +34,7 @@ class Cal2 extends Cal1 {
 	@Override
 	public int sum(int v1, int v2) {
 		System.out.println("Cal2!!!");
-		return v1 + v2;
+		return super.sum(v1, v2);
 	}
 
 	public int minus(int v1, int v2) {
