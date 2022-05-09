@@ -7,6 +7,7 @@ public class CheckedExceptionApp {
 
 	public static void main(String[] args) {
 
+		// try catch finally
 		FileWriter f = null;
 		try {
 			f = new FileWriter("data.txt");
