@@ -4,10 +4,8 @@ public class InterfaceApp {
 
 	public static void main(String[] args) {
 		
-		RealCal c = new RealCal();
-		System.out.println(c.sum(2, 1));
+		printable c = new AdvancedPrint();
 		c.print();
-		System.out.println(c.PI);
 	
 	}
 
@@ -36,4 +34,10 @@ class RealCal implements Calculable, printable {
 		System.out.println("This is RealCal!!");
 	}
 
+}
+
+class AdvancedPrint implements printable{
+	public void print() {
+		System.out.println("This is AdvancedPrint!!");
+	}
 }
